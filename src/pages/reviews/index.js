@@ -26,6 +26,7 @@ const Reviews = () => {
   useEffect(() => {
     setInitialReview(allReviews);
   }, [allReviews]);
+
   return (
     <>
       <div>
@@ -47,17 +48,15 @@ const Reviews = () => {
             return (
               <div className="reviewContainer">
                 <img className="cardImage" src={person.image_url} />
-                <div className="totalTexts">
-                  <div className="texts">
-                    <div className="rateReviews">
-                      <h2>{person.destination_name}</h2>
-                      <p> {person.rating}⭐️</p>
-                    </div>
-                    <div className="namePlace">
-                      <p>By - {person.name}</p>
-                      <h4>Review:</h4>
-                      <p>{person.reviews}</p>
-                    </div>
+
+                <div className="texts">
+                  <div className="rateReviews">
+                    <h2>{person.destination_name}</h2>
+                    <p> {person.round}⭐️</p>
+                  </div>
+
+                  <div className="namePlace">
+                    <h4>{person.r_count} reviews</h4>
                   </div>
                 </div>
               </div>
