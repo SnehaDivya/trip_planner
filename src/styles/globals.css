@@ -1,9 +1,9 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -86,22 +86,203 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
 
-a {
+  /* a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none; */
+  background-image: url("https://cutewallpaper.org/21/simple-backgrounds-images/59+-Simple-Cute-Wallpapers-on-WallpaperPlay.jpg");
+  color: black;
 }
 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+.Navigation_Tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topnav {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.topnav a:hover {
+  background-color: lightskyblue;
+  color: black;
+}
+.topnav a.active {
+  background-color: lightskyblue;
+  color: white;
+}
+h1 {
+  color: black;
+  font-family: "Trebuchet MS";
+}
+.marquee {
+  font-size: xx-large;
+  color: black;
+  font-family: "Trebuchet MS";
+}
+.home {
+  font-size: large;
+  color: black;
+}
+.homeIcon {
+  color: black;
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  margin: 1rem;
+}
+
+.reviewButton {
+  margin-left: 12px;
+  padding: 2.5px;
+}
+.Images {
+  border-radius: 20px;
+  border-color: black;
+  border-style: solid;
+  margin: 12px;
+  margin-bottom: 8px;
+}
+.destinationButton {
+  margin-left: 5px;
+  padding: 2.5px;
+}
+.customerContainer {
+  margin: 12px;
+  /* background-color: skyblue; */
+}
+.buttonsClass {
+  margin-top: 3px;
+}
+
+.specificReviews {
+  color: white;
+}
+.specificReviews {
+  margin: 12px;
+}
+.backIcon {
+  height: 2rem;
+  width: 2rem;
+  margin: 10px;
+}
+.form {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.submit {
+  padding: 3.5px;
+  margin: 6px;
+}
+.specificPlacesFull {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.specificReviews {
+  color: black;
+}
+.h1class {
+  color: black;
+}
+.sortIcon {
+  color: black;
+  height: 2rem;
+  width: 2rem;
+  display: inline-block;
+  margin: 1rem;
+}
+.cardImage {
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  /* border-color: whitesmoke; */
+  /* border-width: 6px; */
+  /* border-style: solid; */
+  max-width: 100%;
+}
+.reviewContainer {
+  margin: 0 auto;
+  margin-bottom: 12px;
+  /* background-color: burlywood; */
+  background-color: whitesmoke;
+  border-radius: 12px;
+  /* border: solid black 2px; */
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
+}
+.texts {
+  /* background-color: orange; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  margin: auto;
+  /* flex: 1; */
+  /* justify-self: center; */
+  /* align-self: center; */
+}
+.totalTexts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 100%;
+}
+.rateReviews {
+  margin: 0.3rem;
+  width: fit-content;
+  height: 100px;
+
+  /* border-right: solid 1px gray; */
+  /* display: inline-block; */
+}
+.namePlace {
+  margin: 0.3rem;
+  /* width: 180px; */
+  height: 100px;
+  /* display: inline-block; */
+}
+/* .reviewContainer .texts {
+  text-align: justify;
+} */
+/* #__next {
+  text-align: left;
+   display: grid; 
+   display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}  */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0 auto;
 }

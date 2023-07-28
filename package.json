@@ -9,10 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.7",
+    "lowdb": "^6.0.1",
+    "morgan": "^1.10.0",
+    "nanoid": "^4.0.2",
     "next": "13.4.7",
+    "openapi": "^1.0.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "swagger-ui-express": "^5.0.0"
   }
 }
