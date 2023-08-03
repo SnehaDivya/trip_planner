@@ -20,25 +20,27 @@ const Destinations = () => {
           router.push("/");
         }}
       />
-
-      {loading ? (
-        <p>Loading......</p>
-      ) : (
-        allDestinations.map((destination) => {
-          return (
-            <div className="destinationContainer">
-              <h2>{destination.destination_name}</h2>
-              <h5>{destination.destination_id}</h5>
-              <div className="destinationImage">
-                <Link href={`/destination/${destination.destination_id}`}>
-                  <img
-                    className="Images"
-                    src={destination.image_url}
-                    width={150}
-                    height={150}
-                  />
-                </Link>
-                <br></br>
+      <div className="FulldestinationContainer">
+        {loading ? (
+          <p>Loading......</p>
+        ) : (
+          allDestinations.map((destination) => {
+            return (
+              <div className="destinationContainer">
+                <div className="names">
+                  <h2>{destination.destination_name}</h2>
+                  <h5>{destination.destination_id}</h5>
+                </div>
+                <div className="destinationImage">
+                  <Link href={`/destination/${destination.destination_id}`}>
+                    <img
+                      className="Images"
+                      src={destination.image_url}
+                      width={150}
+                      height={150}
+                    />
+                  </Link>
+                </div>
                 <button
                   className="reviewButton"
                   onClick={() =>
@@ -49,10 +51,10 @@ const Destinations = () => {
                   Reviews
                 </button>
               </div>
-            </div>
-          );
-        })
-      )}
+            );
+          })
+        )}
+      </div>
     </>
   );
 };

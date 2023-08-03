@@ -37,7 +37,6 @@ const Customers = () => {
           router.push("/");
         }}
       />
-
       <select
         className="sortingOption"
         id="sortoptions"
@@ -58,37 +57,44 @@ const Customers = () => {
         <option value="Sort by reviews">Sort by reviews</option>
         <option value="Sort by places">Sort by places</option>
       </select>
-
-      {loading ? (
-        <p>Loading......</p>
-      ) : (
-        value.map((person) => {
-          return (
-            <div className="customerContainer">
-              <h2>Name : {person.name}</h2>
-              <h5>Registration-ID : {person.user_id}</h5>
-              <p>Mobile No. : {person.mobile}</p>
-              <p>No. of Reviews : {person.review_count}</p>
-              <p>No. of Places Visited : {person.user_count}</p>
-              <div className="buttonsClass">
-                <button
-                  className="reviewButton"
-                  onClick={() => router.push(`/reviews/${person.user_id}`)}
-                >
-                  Reviews
-                </button>
-                <button
-                  className="destinationButton"
-                  onClick={() => router.push(`/destinations/${person.user_id}`)}
-                >
-                  Visited to
-                </button>
-                {/* <br></br> */}
+      <div className="FullContainer">
+        {loading ? (
+          <p>Loading......</p>
+        ) : (
+          value.map((person) => {
+            return (
+              <div className="customerContainer">
+                <img
+                  className="PhotoImage"
+                  src="https://media.istockphoto.com/id/1000410020/vector/profile-pic-icon-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=dndE-6XZITiIgXmiOZb1BfeiFD5BENty_50M9u6gauw="
+                />
+                <h2>{person.name}</h2>
+                <h5>© {person.user_id}</h5>
+                <p>📞 {person.mobile}</p>
+                <p>No. of Reviews 🖋️: {person.review_count}</p>
+                <p>No. of Places Visited : {person.user_count}</p>
+                <div className="buttonsClass">
+                  <button
+                    className="reviewButton"
+                    onClick={() => router.push(`/reviews/${person.user_id}`)}
+                  >
+                    Reviews
+                  </button>
+                  <button
+                    className="destinationButton"
+                    onClick={() =>
+                      router.push(`/destinations/${person.user_id}`)
+                    }
+                  >
+                    Visited to
+                  </button>
+                  {/* <br></br> */}
+                </div>
               </div>
-            </div>
-          );
-        })
-      )}
+            );
+          })
+        )}
+      </div>
     </>
   );
 };

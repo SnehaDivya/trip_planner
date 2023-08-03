@@ -32,10 +32,17 @@ const DestinationPlace = function () {
         onClick={() => router.back("/destinations")}
       />
       {
-        <div>
+        <div className="idImage">
           <h1>Here... you have your destination details!</h1>
-          <h2 className="DName">It is called {destn?.destination_name}</h2>
-          <img src={destn?.image_url} />
+          <br></br>
+          <h2 className="DName">{destn?.destination_name}</h2>
+          <img
+            className="DImage"
+            src={destn?.image_url}
+            width={500}
+            height={300}
+          />
+          <br></br>
           <p className="DDescription">Some details .. {destn?.description}</p>
         </div>
       }

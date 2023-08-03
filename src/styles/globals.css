@@ -150,12 +150,12 @@ h1 {
   color: black;
   height: 2rem;
   width: 2rem;
-  display: inline-block;
+  display: flexbox;
   margin: 1rem;
 }
 
 .reviewButton {
-  margin-left: 12px;
+  margin: 12px;
   padding: 2.5px;
 }
 .Images {
@@ -169,12 +169,23 @@ h1 {
   margin-left: 5px;
   padding: 2.5px;
 }
+.FullContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
 .customerContainer {
   margin: 12px;
-  /* background-color: skyblue; */
+  padding: 8px;
+  background-color: plum;
+  border-radius: 8px;
+  width: 320px;
+}
+.PhotoImage {
+  max-width: 100%;
+  border-radius: 8px;
 }
 .buttonsClass {
-  margin-top: 3px;
+  margin: 3px;
 }
 
 .specificReviews {
@@ -271,4 +282,35 @@ h1 {
   flex-wrap: wrap;
   width: 1200px;
   margin: 0 auto;
+}
+.sortingOption {
+  display: flex;
+}
+.FulldestinationContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1500px;
+}
+.destinationContainer {
+  background-color: burlywood;
+  margin: 0.8rem;
+  border-radius: 12px;
+  border: black solid 2px;
+}
+.names {
+  margin: 6px;
+}
+.idImage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.DDescription {
+  width: 500px;
+}
+.DImage {
+  border: 2px solid black;
+  border-radius: 12px;
 }
