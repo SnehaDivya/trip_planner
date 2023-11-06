@@ -53,9 +53,9 @@ const Customers = () => {
         <option value="" disabled selected hidden>
           Sort by...
         </option>
-        <option value="Default">Default</option>
-        <option value="Sort by reviews">Sort by reviews</option>
-        <option value="Sort by places">Sort by places</option>
+        <option label="Default">Default</option>
+        <option label="Sort by reviews">Sort by reviews</option>
+        <option label="Sort by places">Sort by places</option>
       </select>
       <div className="FullContainer">
         {loading ? (
